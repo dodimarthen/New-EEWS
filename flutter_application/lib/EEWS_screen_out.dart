@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:circular_countdown/circular_countdown.dart';
+import 'package:flutter_application/map_page.dart';
 
 class EEWSScreenOut extends StatefulWidget {
   const EEWSScreenOut({Key? key}) : super(key: key);
@@ -77,7 +78,7 @@ class _EEWSScreenOutState extends State<EEWSScreenOut> {
             ),
           ),
 
-          // Sliver Items
+          // Sliver Items 1
           SliverToBoxAdapter(
             child: Padding(
               padding: const EdgeInsets.all(5.0),
@@ -103,7 +104,7 @@ class _EEWSScreenOutState extends State<EEWSScreenOut> {
               ),
             ),
           ),
-
+          // Sliver Items 2
           SliverToBoxAdapter(
             child: Padding(
               padding: const EdgeInsets.all(5.0),
@@ -129,7 +130,7 @@ class _EEWSScreenOutState extends State<EEWSScreenOut> {
               ),
             ),
           ),
-
+          // Sliver Items 3
           SliverToBoxAdapter(
             child: Padding(
               padding: const EdgeInsets.all(5.0),
@@ -155,8 +156,17 @@ class _EEWSScreenOutState extends State<EEWSScreenOut> {
               ),
             ),
           ),
-
+          // Sliver Items 4
           SliverToBoxAdapter(
+            child: GestureDetector(
+              onTap: (){
+                //navigate to new page
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => NewPage()
+                  ),
+                );
+              },
             child: Padding(
               padding: const EdgeInsets.all(5.0),
               child: Stack(
@@ -181,10 +191,11 @@ class _EEWSScreenOutState extends State<EEWSScreenOut> {
               ),
             ),
           ),
-        ],
-      ),
-    );
-  }
+        ),
+      ],
+    ),
+  );
+}
 
   int getNumberForTime(int remainingTime) {
     // Your logic to determine the number based on remaining time
