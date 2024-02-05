@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Intensity extends StatelessWidget {
-  const Intensity({Key? key});
+class OriginTime extends StatelessWidget {
+  const OriginTime({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class Intensity extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
               ListTile(
-                leading: Image.asset('assets/img/intensity.png'),
+                leading: Image.asset('assets/img/clock_new.png'),
                 title: Text('MAP GEOLOCATION'),
                 subtitle: Text('EPICENTER OF EARTHQUAKE'),
               ),
