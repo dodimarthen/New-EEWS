@@ -9,7 +9,7 @@ class MapCard extends StatelessWidget {
       child: Card(
         child: SizedBox(
           width: 360,
-          height: 110,
+          height: 100,
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
