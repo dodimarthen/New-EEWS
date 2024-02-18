@@ -15,8 +15,8 @@ class LocationDistance extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 leading: Image.asset('assets/img/distance.png'),
-                title: Text('MAP GEOLOCATION'),
-                subtitle: Text('EPICENTER OF EARTHQUAKE'),
+                title: Text('SURFACE RADIUS'),
+                subtitle: Text('EPICENTER DISTANCE TO YOUR POINT', style: TextStyle(fontSize: 12)),
               ),
             ],
           ),

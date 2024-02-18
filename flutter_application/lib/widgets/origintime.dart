@@ -15,8 +15,8 @@ class OriginTime extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 leading: Image.asset('assets/img/clock_new.png'),
-                title: Text('MAP GEOLOCATION'),
-                subtitle: Text('EPICENTER OF EARTHQUAKE'),
+                title: Text('TIMESTAMP'),
+                subtitle: Text('TIME OF EVENT'),
               ),
             ],
           ),

@@ -15,8 +15,8 @@ class Intensity extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 leading: Image.asset('assets/img/intensity.png'),
-                title: Text('MAP GEOLOCATION'),
-                subtitle: Text('EPICENTER OF EARTHQUAKE'),
+                title: Text('INTENSITY LEVEL'),
+                subtitle: Text('DAMAGE CAUSED'),
               ),
             ],
           ),
