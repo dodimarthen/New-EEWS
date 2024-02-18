@@ -16,7 +16,11 @@ class _EewsState extends State<Eews> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('EEWS'),
+        title: Text('EEWS', style: TextStyle(
+          fontSize: 25, 
+          color: Colors.lightBlue[50], 
+          fontWeight: FontWeight.w400)
+          ),
         backgroundColor: Colors.blue[400],
       ),
       body: Stack(
