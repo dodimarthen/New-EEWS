@@ -31,7 +31,7 @@ class _MapViewState extends State<MapView> {
       },
       initialCameraPosition: CameraPosition(
         target: LatLng(-6.262423, 106.815695), //Coordinate example of kemang location
-        zoom: 15.0,
+        zoom: 8.0,
       ),
     );
   }

@@ -3,6 +3,8 @@ import 'package:flutter_application/widgets/intensity_level.dart';
 import 'package:flutter_application/widgets/location.dart';
 import 'package:flutter_application/widgets/map.dart';
 import 'package:flutter_application/widgets/origintime.dart';
+import 'package:flutter_application/widgets/CountdownCircularTimer.dart';
+
 
 class Eews extends StatefulWidget {
   const Eews({Key? key});
@@ -63,8 +65,10 @@ class _EewsState extends State<Eews> {
             bottom: 435,
             child: Container(
               height: 180,
-              color: Colors.green,
-              // Customize your container here
+              color: Color.fromARGB(255, 31, 129, 61),
+              // add CountDown Circular
+              child: CountdownCircularTimerIntensity(
+              ),
             ),
           ),
         ],
