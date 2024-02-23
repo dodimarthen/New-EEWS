@@ -35,7 +35,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_maps_flutter : ^2.0.10
   circular_countdown : ^2.1.0
-  
+  custom_alert_dialog_box: ^1.0.2
+  audioplayers: ^0.20.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

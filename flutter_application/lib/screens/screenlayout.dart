@@ -5,6 +5,7 @@ import 'package:flutter_application/widgets/map.dart';
 import 'package:flutter_application/widgets/origintime.dart';
 import 'package:flutter_application/widgets/CountdownCircularTimer.dart';
 
+
 class Eews extends StatefulWidget {
   const Eews({Key? key});
 
@@ -20,11 +21,17 @@ class _EewsState extends State<Eews> {
         title: Text(
           'EEWS',
           style: TextStyle(
-              fontSize: 25,
-              color: Colors.lightBlue[50],
-              fontWeight: FontWeight.w400),
+            fontSize: 30,
+            color: Colors.white,
+            fontWeight: FontWeight.w400,
+          ),
         ),
         backgroundColor: Colors.blue[400],
+        leading: Image.asset(
+          'assets/img/BMG.png',
+          width: 10,
+          height: 10,
+        ),
       ),
       body: Stack(
         children: [
@@ -71,7 +78,8 @@ class _EewsState extends State<Eews> {
                 child: Padding(
                   padding: EdgeInsets.all(16.0),
                   // add CountDown Circular
-                  child: CountdownCircularTimerIntensity(),
+                  child: CountdownCircularTimerIntensity(
+                  ),
                 ),
               ),
             ),
