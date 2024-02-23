@@ -5,7 +5,6 @@ import 'package:flutter_application/widgets/map.dart';
 import 'package:flutter_application/widgets/origintime.dart';
 import 'package:flutter_application/widgets/CountdownCircularTimer.dart';
 
-
 class Eews extends StatefulWidget {
   const Eews({Key? key});
 
@@ -18,11 +17,13 @@ class _EewsState extends State<Eews> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('EEWS', style: TextStyle(
-          fontSize: 25, 
-          color: Colors.lightBlue[50], 
-          fontWeight: FontWeight.w400)
-          ),
+        title: Text(
+          'EEWS',
+          style: TextStyle(
+              fontSize: 25,
+              color: Colors.lightBlue[50],
+              fontWeight: FontWeight.w400),
+        ),
         backgroundColor: Colors.blue[400],
       ),
       body: Stack(
@@ -36,7 +37,7 @@ class _EewsState extends State<Eews> {
             ),
           ),
           Positioned(
-            top:334,
+            top: 334,
             left: 10,
             child: Intensity(
               // Your Intensity widget
@@ -56,18 +57,22 @@ class _EewsState extends State<Eews> {
               // Your OriginTime widget
             ),
           ),
-          
+
           // Container on top
           Positioned(
             top: 0,
             left: 0,
             right: 0,
-            bottom: 435,
+            bottom: 430,
             child: Container(
-              height: 180,
-              color: Color.fromARGB(255, 31, 129, 61),
-              // add CountDown Circular
-              child: CountdownCircularTimerIntensity(
+              color: Colors.redAccent[700],
+              child: Align(
+                alignment: Alignment.topCenter,
+                child: Padding(
+                  padding: EdgeInsets.all(16.0),
+                  // add CountDown Circular
+                  child: CountdownCircularTimerIntensity(),
+                ),
               ),
             ),
           ),

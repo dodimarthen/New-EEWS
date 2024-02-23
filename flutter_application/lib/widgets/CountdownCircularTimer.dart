@@ -8,11 +8,12 @@ class CountdownCircularTimerIntensity extends StatelessWidget {
   Widget build(BuildContext context) {
     return TimeCircularCountdown(
       unit: CountdownUnit.second,
-      countdownTotal: 14,
-      countdownRemainingColor : Colors.yellow,
-      countdownCurrentColor: Colors.grey,
-      onUpdated: (unit, remaining) => print('Updated'),
-      onFinished: () => print('Countdown Finished'),
+      countdownTotal: 15,
+      diameter : 220,
+      strokeWidth: 33,
+      repeat: true,
+      countdownRemainingColor : Colors.white, 
+      countdownCurrentColor: Colors.yellow[600],
     );
   }
 }
