@@ -16,6 +16,7 @@ class CountdownCircularTimerIntensity extends StatelessWidget {
       repeat: true,
       countdownRemainingColor : Colors.white, 
       countdownCurrentColor: Colors.yellow[600],
+      textStyle: TextStyle(fontSize: 40, color: Colors.white, fontWeight: FontWeight.bold)
     );
   }
 }

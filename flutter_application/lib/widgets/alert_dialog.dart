@@ -9,7 +9,7 @@ class DialogExample extends StatelessWidget {
       onPressed: () => showDialog<String>(
         context: context,
         builder: (BuildContext context) => AlertDialog(
-          title: const Text('Alerta!'),
+          title: const Text('Alert!'),
           content: const Text('Peringatan dini gempa bumi!'),
           actions: <Widget>[
             TextButton(
