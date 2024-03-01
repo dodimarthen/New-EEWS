@@ -13,7 +13,7 @@ class _CountdownCircularTimerIntensityState extends State<CountdownCircularTimer
   Widget build(BuildContext context) {
     return TimeCircularCountdown(
       unit: CountdownUnit.second,
-      countdownTotal: 12,
+      countdownTotal: 14,
       diameter: 220,
       strokeWidth: 33,
       repeat: false,
@@ -24,7 +24,7 @@ class _CountdownCircularTimerIntensityState extends State<CountdownCircularTimer
         showDialog<String>(
           context: context,
           builder: (BuildContext context) => AlertDialog(
-            title: const Text('Alert!'),
+            title: const Text('Pemberitahuan!'),
             content: const Text('Peringatan dini gempa bumi!'),
             actions: <Widget>[
               TextButton(
