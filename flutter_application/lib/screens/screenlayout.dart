@@ -38,8 +38,9 @@ class _EewsState extends State<Eews> {
         children: [
           // 4 Card widgets
           Positioned(
-            top: 260,
+            top: 258,
             left: 10,
+            right: 10,
             child: MapCard(
               // Your MapCard widget
             ),
@@ -47,6 +48,7 @@ class _EewsState extends State<Eews> {
           Positioned(
             top: 362,
             left: 10,
+            right: 10,
             child: Intensity(
               // Your Intensity widget
             ),
@@ -54,6 +56,7 @@ class _EewsState extends State<Eews> {
           Positioned(
             top: 465,
             left: 10,
+            right: 10,
             child: LocationDistance(
               // Your LocationDistance widget
             ),
@@ -61,6 +64,7 @@ class _EewsState extends State<Eews> {
           Positioned(
             top: 568,
             left: 10,
+            right : 10,
             child: OriginTime(
               // Your OriginTime widget
             ),
