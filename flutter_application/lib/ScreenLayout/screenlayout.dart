@@ -18,7 +18,7 @@ class _EewsState extends State<Eews> {
         children: [
           // 4 Card widgets
           Positioned(
-            top: 258,
+            top: 105,
             left: 10,
             right: 10,
             child: Countdowncircular(),

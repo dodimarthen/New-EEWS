@@ -9,12 +9,11 @@ class Countdowncircular extends StatelessWidget {
     return TimeCircularCountdown(
       unit: CountdownUnit.second,
       countdownTotal: 10,
-      diameter: 220,
-      strokeWidth: 33,
+      diameter: 180,
       repeat: false,
       countdownRemainingColor: Colors.black26,
       countdownCurrentColor: Colors.yellow[600],
-      textStyle: TextStyle(fontSize: 40, color: Colors.white, fontWeight: FontWeight.bold),
+      textStyle: TextStyle(fontSize: 40, color: const Color.fromARGB(255, 8, 3, 3), fontWeight: FontWeight.bold),
       onFinished: () async {
         showDialog<String>(
           context: context,
