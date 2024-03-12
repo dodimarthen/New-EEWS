@@ -7,7 +7,7 @@ environment:
   sdk: '>=3.2.6 <4.0.0'
 
 dependencies:
-  circular_countdown: ^2.1.0
+  circular_countdown_timer: ^0.2.3
   flutter:
     sdk: flutter
 

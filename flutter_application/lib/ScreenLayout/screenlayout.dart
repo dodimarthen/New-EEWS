@@ -15,13 +15,14 @@ class _EewsState extends State<Eews> {
     return Scaffold(
       appBar: AppBarEEWS(),
       body: Stack(
+        alignment: Alignment.center,
         children: [
           // 4 Card widgets
           Positioned(
-            top: 105,
+            top: 40,
             left: 10,
             right: 10,
-            child: Countdowncircular(),
+            child: MyCircularCountDownTimer(),
           ),
           // Add more Positioned widgets or other widgets as needed
         ],

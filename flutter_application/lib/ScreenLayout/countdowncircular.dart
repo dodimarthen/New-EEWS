@@ -1,20 +1,37 @@
 import 'package:flutter/material.dart';
-import 'package:circular_countdown/circular_countdown.dart';
+import 'package:circular_countdown_timer/circular_countdown_timer.dart';
 
-class Countdowncircular extends StatelessWidget {
-  const Countdowncircular({Key? key}) : super(key: key);
+class MyCircularCountDownTimer extends StatefulWidget {
+  const MyCircularCountDownTimer({Key? key}) : super(key: key);
 
   @override
+  _MyCircularCountDownTimerState createState() => _MyCircularCountDownTimerState();
+}
+
+class _MyCircularCountDownTimerState extends State<MyCircularCountDownTimer> {
+  @override
   Widget build(BuildContext context) {
-    return TimeCircularCountdown(
-      unit: CountdownUnit.second,
-      countdownTotal: 10,
-      diameter: 180,
-      repeat: false,
-      countdownRemainingColor: Colors.black26,
-      countdownCurrentColor: Colors.yellow[600],
-      textStyle: TextStyle(fontSize: 40, color: const Color.fromARGB(255, 8, 3, 3), fontWeight: FontWeight.bold),
-      onFinished: () async {
+    return CircularCountDownTimer(
+      duration: 10,
+      initialDuration: 0,
+      controller: CountDownController(),
+      width: MediaQuery.of(context).size.width / 4,
+      height: MediaQuery.of(context).size.height / 4,
+      ringColor: Colors.blueGrey.shade900,
+      ringGradient: null,
+      fillColor: Colors.yellow.shade700,
+      fillGradient: null,
+      backgroundColor: Colors.blueGrey.shade900,
+      backgroundGradient: null,
+      strokeWidth: 10.0,
+      strokeCap: StrokeCap.round,
+      textStyle: TextStyle(fontSize: 33.0, color: Colors.white, fontWeight: FontWeight.bold),
+      textFormat: CountdownTextFormat.S,
+      isReverse: true,
+      isReverseAnimation: true,
+      isTimerTextShown: true,
+      autoStart: true,
+      onComplete: () async {
         showDialog<String>(
           context: context,
           builder: (BuildContext context) => AlertDialog(
