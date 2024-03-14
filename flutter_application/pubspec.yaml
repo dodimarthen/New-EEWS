@@ -26,3 +26,5 @@ flutter:
     - assets/sounds/warning.mp3
     - assets/img/map.png
     - assets/img/map_717498.png
+    - assets/img/seismic.png
+    - assets/img/clock.png

@@ -2,6 +2,7 @@
   import 'package:myapp/ScreenLayout/countdowncircular.dart';
   import 'package:myapp/ScreenLayout/appbarlayout.dart';
 import 'package:myapp/ScreenLayout/distancecard.dart';
+import 'package:myapp/ScreenLayout/eventtime.dart';
   import 'package:myapp/ScreenLayout/mapcard.dart';
 
   class Eews extends StatefulWidget {
@@ -37,6 +38,12 @@ import 'package:myapp/ScreenLayout/distancecard.dart';
               left: 10,
               right: 10,
               child: Distance(),
+             ),
+             Positioned(
+              top: 430,
+              left: 10,
+              right: 10,
+              child: realtimeevent(),
              ),
             // Add more Positioned widgets or other widgets as needed
           ],
