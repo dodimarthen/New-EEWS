@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class shakemap extends StatelessWidget {
-  const shakemap({Key? key});
+class Distance extends StatelessWidget {
+  const Distance({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,8 +12,8 @@ class shakemap extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             ListTile(
-              leading: Image.asset('assets/img/map.png'),
-              title: Text('Earthquake Coordinate'),
+              leading: Image.asset('assets/img/map_717498.png'),
+              title: Text('Distance with you'),
               subtitle: Text('Location Coordinates'),
             ),
           ],
