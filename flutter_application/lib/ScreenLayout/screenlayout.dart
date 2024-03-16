@@ -22,19 +22,19 @@ import 'package:myapp/ScreenLayout/eventtime.dart';
           children: [
             // 4 Card widgets
             Positioned(
-              top: 40,
+              top: 20,
               left: 10,
               right: 10,
               child: MyCircularCountDownTimer(),
             ),
             Positioned(
-              top: 260,
+              top: 230,
               left: 10,
               right: 10,
-              child: shakemap(),
+              child: realtimeevent(),
             ),
              Positioned(
-              top: 345,
+              top: 330,
               left: 10,
               right: 10,
               child: Distance(),
@@ -43,7 +43,7 @@ import 'package:myapp/ScreenLayout/eventtime.dart';
               top: 430,
               left: 10,
               right: 10,
-              child: realtimeevent(),
+              child: shakemap(),
              ),
             // Add more Positioned widgets or other widgets as needed
           ],
