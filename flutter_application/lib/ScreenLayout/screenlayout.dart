@@ -1,9 +1,10 @@
   import 'package:flutter/material.dart';
   import 'package:myapp/ScreenLayout/countdowncircular.dart';
   import 'package:myapp/ScreenLayout/appbarlayout.dart';
-import 'package:myapp/ScreenLayout/distancecard.dart';
-import 'package:myapp/ScreenLayout/eventtime.dart';
+  import 'package:myapp/ScreenLayout/distancecard.dart';
+  import 'package:myapp/ScreenLayout/eventtime.dart';
   import 'package:myapp/ScreenLayout/mapcard.dart';
+  import 'package:myapp/ScreenLayout/intensity.dart';
 
   class Eews extends StatefulWidget {
     const Eews({Key? key});
@@ -44,6 +45,12 @@ import 'package:myapp/ScreenLayout/eventtime.dart';
               left: 10,
               right: 10,
               child: shakemap(),
+             ),
+             Positioned(
+              top: 530,
+              left: 10,
+              right: 10,
+              child: intensitymeter(),
              ),
             // Add more Positioned widgets or other widgets as needed
           ],

@@ -15,7 +15,7 @@ class shakemap extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 leading: Image.asset('assets/img/map.png'),
-                title: Text('Earthquake Coordinate', style: TextStyle(fontSize: 19.0),),
+                title: Text('Earthquake Coordinate', style: TextStyle(fontSize: 22.0),),
                 subtitle: Text('Location Coordinates'),
               ),
             ],

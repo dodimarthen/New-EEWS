@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Distance extends StatelessWidget {
-  const Distance({Key? key});
+class intensitymeter extends StatelessWidget {
+  const intensitymeter({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +14,8 @@ class Distance extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
               ListTile(
-                leading: Image.asset('assets/img/map_717498.png'),
-                title: Text('Distance with you', 
+                leading: Image.asset('assets/img/seismic.png'),
+                title: Text('intensity meter', 
                 style: TextStyle(
                   fontSize: 22.0
                   ),

@@ -17,7 +17,7 @@ class realtimeevent extends StatelessWidget {
                 leading: Image.asset('assets/img/stopwatch.png'),
                 title: Text('Event time', 
                 style: TextStyle(
-                  fontSize: 19.0
+                  fontSize: 22.0,
                   ),
                   ),
                 subtitle: Text('Showing Real Datetime', style: TextStyle(fontSize: 14.0),),
