@@ -38,19 +38,19 @@
               top: 330,
               left: 10,
               right: 10,
-              child: Distance(),
+              child: shakemap(),
              ),
              Positioned(
               top: 430,
               left: 10,
               right: 10,
-              child: shakemap(),
+              child: Distance(),
              ),
              Positioned(
               top: 530,
               left: 10,
               right: 10,
-              child: intensitymeter(),
+              child: IntensityMeter(),
              ),
             // Add more Positioned widgets or other widgets as needed
           ],

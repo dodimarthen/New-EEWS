@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-class intensitymeter extends StatelessWidget {
-  const intensitymeter({Key? key});
+
+class IntensityMeter extends StatelessWidget {
+  const IntensityMeter({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,12 +17,10 @@ class intensitymeter extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 leading: Image.asset('assets/img/seismic.png'),
-                title: Text('intensity meter', 
-                style: TextStyle(
-                  fontSize: 22.0
-                  ),
-                  ),
-                subtitle: Text('Location Coordinates'),
+                title: Text('Intensity Meter',
+                style: GoogleFonts.roboto(fontSize: 23.0)
+                ),
+                subtitle: Text('Dampak Kerusakan'),
               ),
             ],
           ),

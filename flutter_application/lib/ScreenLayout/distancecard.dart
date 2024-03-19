@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Distance extends StatelessWidget {
   const Distance({Key? key});
@@ -15,11 +16,9 @@ class Distance extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 leading: Image.asset('assets/img/map_717498.png'),
-                title: Text('Distance with you', 
-                style: TextStyle(
-                  fontSize: 22.0
-                  ),
-                  ),
+                title: Text('Distance with you',
+                style: GoogleFonts.roboto(fontSize: 23.0)
+                ),
                 subtitle: Text('Location Coordinates'),
               ),
             ],

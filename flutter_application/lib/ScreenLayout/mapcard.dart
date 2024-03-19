@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 
 class shakemap extends StatelessWidget {
   const shakemap({Key? key});
@@ -15,8 +17,9 @@ class shakemap extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 leading: Image.asset('assets/img/map.png'),
-                title: Text('Earthquake Coordinate', style: TextStyle(fontSize: 22.0),),
-                subtitle: Text('Location Coordinates'),
+                title: Text('Earthquake Coordinate',
+                style: GoogleFonts.roboto(fontSize: 23.0)),
+                subtitle: Text('Epicenter Earthquake'),
               ),
             ],
           ),

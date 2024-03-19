@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class realtimeevent extends StatelessWidget {
   const realtimeevent({Key? key});
@@ -15,12 +16,10 @@ class realtimeevent extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 leading: Image.asset('assets/img/stopwatch.png'),
-                title: Text('Event time', 
-                style: TextStyle(
-                  fontSize: 22.0,
-                  ),
-                  ),
-                subtitle: Text('Showing Real Datetime', style: TextStyle(fontSize: 14.0),),
+                title: Text('Event time',
+                style: GoogleFonts.roboto(fontSize: 23.0),
+                ),
+                subtitle: Text('Showing Real Datetime'),
               ),
             ],
           ),

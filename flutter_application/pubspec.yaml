@@ -10,7 +10,8 @@ dependencies:
   circular_countdown_timer: ^0.2.3
   flutter:
     sdk: flutter
-  google_fonts: ^6.2.0
+  google_fonts: ^6.2.1
+
 
 dev_dependencies:
   flutter_test:
@@ -31,12 +32,3 @@ flutter:
     - assets/img/clock.png
     - assets/img/stopwatch.png
     - assets/img/intensity.png
-
-  fonts:
-    - family: Roboto
-      fonts:
-        - asset: fonts/RobotoMono-Bold.ttf
-        - asset: fonts/Roboto-Bold.ttf
-    - family: Single Day
-      fonts:
-        - asset : fonts/SingleDay-Regular.ttf

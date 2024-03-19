@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AppBarEEWS extends StatelessWidget implements PreferredSizeWidget {
   const AppBarEEWS({Key? key}) : super(key: key);
@@ -11,7 +12,7 @@ class AppBarEEWS extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       title: Text(
         'Earthquake Early Warning System',
-        style: TextStyle(
+        style: GoogleFonts.roboto(
           fontSize: 18.5,
           color: Colors.grey[50],
           fontWeight: FontWeight.w500,
